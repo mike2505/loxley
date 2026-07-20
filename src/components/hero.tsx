@@ -7,7 +7,7 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, type MouseEvent } from "react";
@@ -19,6 +19,15 @@ const STATS = [
   { value: 24, prefix: "$", suffix: "M", label: "paid out to creators" },
   { value: 0.25, suffix: "s", decimals: 2, label: "block time" },
 ];
+
+/* lucide dropped brand icons — inline GitHub mark */
+function GithubIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
+      <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+    </svg>
+  );
+}
 
 /* deterministic particle field — module-level so SSR and client agree */
 const PARTICLES = Array.from({ length: 16 }, (_, i) => ({
@@ -332,11 +341,13 @@ export function Hero() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
-                href="#chain"
+                href="https://github.com/LoxleyRobotics/loxley-sdk"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-xl border border-line bg-panel/60 px-7 py-3.5 text-sm font-medium text-snow backdrop-blur transition-colors hover:border-lox/30 hover:bg-panel"
               >
-                <FileText className="h-4 w-4 text-fog" />
-                Read the litepaper
+                <GithubIcon className="h-4 w-4 text-fog" />
+                View on GitHub
               </Link>
             </motion.div>
           </motion.div>

@@ -16,7 +16,7 @@ const COLUMNS = [
     title: "Protocol",
     links: [
       { label: "$LOX Token", href: "#chain" },
-      { label: "Litepaper", href: "#chain" },
+      { label: "SDK Docs", href: "https://github.com/LoxleyRobotics/loxley-sdk", external: true },
       { label: "Governance", href: "#chain" },
       { label: "Roadmap", href: "#roadmap" },
       { label: "Audits", href: "#chain" },
@@ -25,7 +25,6 @@ const COLUMNS = [
   {
     title: "Community",
     links: [
-      { label: "Discord", href: "https://discord.gg/loxley", external: true },
       { label: "X / Twitter", href: "https://x.com/loxleyrobotics", external: true },
       { label: "GitHub", href: "https://github.com/LoxleyRobotics/loxley-sdk", external: true },
       { label: "Creator Hub", href: "#marketplace" },

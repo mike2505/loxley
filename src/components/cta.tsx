@@ -52,12 +52,12 @@ export function CTA() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
-                href="https://discord.gg/loxley"
+                href="https://github.com/LoxleyRobotics/loxley-sdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl border border-line bg-night/60 px-8 py-4 text-sm font-medium text-snow backdrop-blur transition-colors hover:border-lox/30"
               >
-                Join the Discord
+                View on GitHub
               </Link>
             </div>
             <span className="mt-4 font-mono text-[11px] uppercase tracking-[0.22em] text-fog">
