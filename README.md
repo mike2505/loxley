@@ -86,6 +86,6 @@ Defined in `globals.css` (`@theme inline`): `night` (bg) · `panel` · `line` (b
 
 <div align="center">
 
-**[loxley.work](https://loxley.work)** · [GitHub](https://github.com/LoxleyRobotics/loxley-sdk) · [X](https://x.com/loxleyrobotics)
+**[loxley.work](https://loxley.work)** · [GitHub](https://github.com/LoxleyRobotics/loxley-sdk) · [X](https://x.com/LoxleyRobotics)
 
 </div>

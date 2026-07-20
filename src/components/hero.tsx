@@ -334,7 +334,7 @@ export function Hero() {
               className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
             >
               <Link
-                href="#platform"
+                href="/#platform"
                 className="group flex items-center gap-2 rounded-xl bg-lox px-7 py-3.5 text-sm font-semibold text-night shadow-[0_0_40px_rgba(77,255,143,0.25)] transition-all hover:bg-snow hover:shadow-[0_0_60px_rgba(77,255,143,0.4)]"
               >
                 Start building

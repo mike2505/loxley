@@ -95,7 +95,7 @@ export function Marketplace() {
 
         <Reveal delay={0.2} className="mt-12 flex justify-center">
           <Link
-            href="#cta"
+            href="/#cta"
             className="group flex items-center gap-2 rounded-xl border border-line bg-panel px-6 py-3 text-sm font-medium text-snow transition-colors hover:border-lox/30"
           >
             Browse all 3,180 models

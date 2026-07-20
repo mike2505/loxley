@@ -7,11 +7,13 @@ import { useState } from "react";
 import { Logo } from "./logo";
 import { cn } from "@/lib/utils";
 
+/* "/#x" instead of "#x" so links resolve from /docs too */
 const LINKS = [
-  { href: "#platform", label: "Platform" },
-  { href: "#marketplace", label: "Marketplace" },
-  { href: "#chain", label: "Chain & $LOX" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "/#platform", label: "Platform" },
+  { href: "/#marketplace", label: "Marketplace" },
+  { href: "/#chain", label: "Chain & $LOX" },
+  { href: "/docs", label: "Docs" },
+  { href: "/#roadmap", label: "Roadmap" },
 ];
 
 export function Navbar() {
@@ -54,7 +56,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="#cta"
+            href="/#cta"
             className="group hidden items-center gap-1.5 rounded-xl bg-lox px-4 py-2 text-sm font-semibold text-night transition-all hover:bg-snow sm:flex"
           >
             Launch App

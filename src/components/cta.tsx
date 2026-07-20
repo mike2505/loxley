@@ -45,7 +45,7 @@ export function CTA() {
             </p>
             <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row">
               <Link
-                href="#platform"
+                href="/#platform"
                 className="group flex items-center gap-2 rounded-xl bg-lox px-8 py-4 text-sm font-semibold text-night shadow-[0_0_50px_rgba(77,255,143,0.3)] transition-all hover:bg-snow"
               >
                 Launch the app

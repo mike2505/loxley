@@ -5,30 +5,30 @@ const COLUMNS = [
   {
     title: "Platform",
     links: [
-      { label: "Robot Builder", href: "#platform" },
-      { label: "Simulator", href: "#platform" },
-      { label: "LoxOS", href: "#platform" },
-      { label: "Compute", href: "#platform" },
-      { label: "Marketplace", href: "#marketplace" },
+      { label: "Robot Builder", href: "/#platform" },
+      { label: "Simulator", href: "/#platform" },
+      { label: "LoxOS", href: "/#platform" },
+      { label: "Compute", href: "/#platform" },
+      { label: "Marketplace", href: "/#marketplace" },
     ],
   },
   {
     title: "Protocol",
     links: [
-      { label: "$LOX Token", href: "#chain" },
-      { label: "SDK Docs", href: "https://github.com/LoxleyRobotics/loxley-sdk", external: true },
-      { label: "Governance", href: "#chain" },
-      { label: "Roadmap", href: "#roadmap" },
-      { label: "Audits", href: "#chain" },
+      { label: "$LOX Token", href: "/#chain" },
+      { label: "SDK Docs", href: "/docs" },
+      { label: "Governance", href: "/#chain" },
+      { label: "Roadmap", href: "/#roadmap" },
+      { label: "Audits", href: "/#chain" },
     ],
   },
   {
     title: "Community",
     links: [
-      { label: "X / Twitter", href: "https://x.com/loxleyrobotics", external: true },
+      { label: "X / Twitter", href: "https://x.com/LoxleyRobotics", external: true },
       { label: "GitHub", href: "https://github.com/LoxleyRobotics/loxley-sdk", external: true },
-      { label: "Creator Hub", href: "#marketplace" },
-      { label: "Grants", href: "#cta" },
+      { label: "Creator Hub", href: "/#marketplace" },
+      { label: "Grants", href: "/#cta" },
     ],
   },
 ];
