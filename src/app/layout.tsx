@@ -19,14 +19,26 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://loxley.work"),
   title: "Loxley — Open Robotics on Robinhood Chain",
   description:
     "Loxley is the open platform to build, simulate, deploy and monetize robots on-chain. The people's robotics platform, powered by Robinhood Chain.",
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Loxley — Open Robotics on Robinhood Chain",
     description:
       "Build, simulate, deploy and monetize robots on-chain. The people's robotics platform.",
+    url: "https://loxley.work",
+    siteName: "Loxley",
     type: "website",
+    images: [{ url: "/og.webp", width: 1600, height: 813 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Loxley — Open Robotics on Robinhood Chain",
+    description:
+      "Build, simulate, deploy and monetize robots on-chain. Robotics for the many, not the few.",
+    images: ["/og.webp"],
   },
 };
 
