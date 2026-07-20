@@ -1,26 +1,150 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --night: #060907;
+  --panel: #0b100d;
+  --panel-2: #0e1611;
+  --line: #1b2620;
+  --fog: #93a89b;
+  --snow: #e9f2ec;
+  --lox: #4dff8f;
+  --lox-dim: #23c563;
+  --lox-deep: #0c2d1a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-night: var(--night);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-fog: var(--fog);
+  --color-snow: var(--snow);
+  --color-lox: var(--lox);
+  --color-lox-dim: var(--lox-dim);
+  --color-lox-deep: var(--lox-deep);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-grid-pan: grid-pan 24s linear infinite;
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
+  --animate-scan: scan 5s ease-in-out infinite;
+  --animate-hover-bob: hover-bob 5s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes hover-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(2deg);
   }
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes grid-pan {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 640px;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(77, 255, 143, 0.5);
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 0 6px rgba(77, 255, 143, 0);
+  }
+}
+
+@keyframes scan {
+  0%,
+  100% {
+    transform: translateY(-120%);
+  }
+  50% {
+    transform: translateY(360%);
+  }
+}
+
+/* smooth scrolling is handled by Lenis (see smooth-scroll.tsx) */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--night);
+  color: var(--snow);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--lox);
+  color: var(--night);
+}
+
+/* thin green scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+/* mouse-follow glow cards: components set --mx / --my on mousemove */
+.glow-card {
+  position: relative;
+}
+
+.glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(
+    480px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(77, 255, 143, 0.08),
+    transparent 55%
+  );
+}
+
+.glow-card:hover::before {
+  opacity: 1;
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, var(--snow) 20%, var(--lox) 65%, var(--lox-dim));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* dotted terrain background for the hero */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(77, 255, 143, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 255, 143, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 30%, transparent 72%);
 }
