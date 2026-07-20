@@ -27,7 +27,7 @@ const COLUMNS = [
     links: [
       { label: "Discord", href: "https://discord.gg/loxley", external: true },
       { label: "X / Twitter", href: "https://x.com/loxleyrobotics", external: true },
-      { label: "GitHub", href: "https://github.com/mike2505/loxley-sdk", external: true },
+      { label: "GitHub", href: "https://github.com/LoxleyRobotics/loxley-sdk", external: true },
       { label: "Creator Hub", href: "#marketplace" },
       { label: "Grants", href: "#cta" },
     ],

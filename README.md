@@ -9,7 +9,7 @@
 *Robotics for the many, not the few.*
 
 [![site](https://img.shields.io/badge/live-loxley.work-4dff8f?labelColor=060907)](https://loxley.work)
-[![sdk](https://img.shields.io/badge/sdk-%40loxley%2Fsdk-4dff8f?logo=typescript&labelColor=060907)](https://github.com/mike2505/loxley-sdk)
+[![sdk](https://img.shields.io/badge/sdk-%40loxley%2Fsdk-4dff8f?logo=typescript&labelColor=060907)](https://github.com/LoxleyRobotics/loxley-sdk)
 [![chain](https://img.shields.io/badge/Robinhood_Chain-%24LOX-4dff8f?labelColor=060907)](#)
 [![next](https://img.shields.io/badge/Next.js-16-4dff8f?logo=nextdotjs&labelColor=060907)](#)
 
@@ -80,7 +80,7 @@ Defined in `globals.css` (`@theme inline`): `night` (bg) · `panel` · `line` (b
 
 ## Ecosystem
 
-- **[@loxley/sdk](https://github.com/mike2505/loxley-sdk)** — TypeScript SDK: registry, marketplace, sim, OTA deploy, royalties, chain RPC
+- **[@loxley/sdk](https://github.com/LoxleyRobotics/loxley-sdk)** — TypeScript SDK: registry, marketplace, sim, OTA deploy, royalties, chain RPC
 
 ---
 
