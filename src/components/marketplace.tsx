@@ -19,12 +19,12 @@ type Robot = {
 };
 
 const ROBOTS: Robot[] = [
-  { name: "WREN-2 Scout", category: "Aerial recon", creator: "@marian", price: 84, downloads: "12.1k", rating: 4.9, img: "/robots/wren.webp" },
-  { name: "L-JOHN Heavy", category: "Warehouse haul", creator: "@littlejohn", price: 210, downloads: "8.4k", rating: 4.8, img: "/robots/ljohn.webp" },
-  { name: "TUCK-9 Arm", category: "Manipulation", creator: "@tuck", price: 126, downloads: "20.3k", rating: 4.9, img: "/robots/tuck.webp" },
-  { name: "SCARLET Rover", category: "Field survey", creator: "@scarlet", price: 95, downloads: "6.7k", rating: 4.7, img: "/robots/scarlet.webp" },
-  { name: "MARIAN Assist", category: "Home robotics", creator: "@marian", price: 58, downloads: "31.8k", rating: 5.0, img: "/robots/marian.webp" },
-  { name: "ALAN-A Cart", category: "Last-mile delivery", creator: "@alanadale", price: 149, downloads: "4.2k", rating: 4.6, img: "/robots/alan.webp" },
+  { name: "WREN-2 Scout", category: "Aerial recon", creator: "@marian", price: 84, downloads: "1.4k", rating: 4.9, img: "/robots/wren.webp" },
+  { name: "L-JOHN Heavy", category: "Warehouse haul", creator: "@littlejohn", price: 210, downloads: "920", rating: 4.8, img: "/robots/ljohn.webp" },
+  { name: "TUCK-9 Arm", category: "Manipulation", creator: "@tuck", price: 126, downloads: "2.1k", rating: 4.9, img: "/robots/tuck.webp" },
+  { name: "SCARLET Rover", category: "Field survey", creator: "@scarlet", price: 95, downloads: "740", rating: 4.7, img: "/robots/scarlet.webp" },
+  { name: "MARIAN Assist", category: "Home robotics", creator: "@marian", price: 58, downloads: "3.2k", rating: 5.0, img: "/robots/marian.webp" },
+  { name: "ALAN-A Cart", category: "Last-mile delivery", creator: "@alanadale", price: 149, downloads: "460", rating: 4.6, img: "/robots/alan.webp" },
 ];
 
 export function Marketplace() {
@@ -98,7 +98,7 @@ export function Marketplace() {
             href="/#cta"
             className="group flex items-center gap-2 rounded-xl border border-line bg-panel px-6 py-3 text-sm font-medium text-snow transition-colors hover:border-lox/30"
           >
-            Browse all 3,180 models
+            Browse all 480 models
             <ArrowUpRight className="h-4 w-4 text-lox transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </Reveal>

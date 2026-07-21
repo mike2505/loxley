@@ -42,7 +42,7 @@ export function CTA() {
               Build. Deploy. Own.
             </h2>
             <p className="max-w-xl text-base leading-relaxed text-fog sm:text-lg">
-              The robotics revolution won&apos;t be closed-source. Join 12,400
+              The robotics revolution won&apos;t be closed-source. Join 2,300
               builders taking it back — one robot at a time.
             </p>
             <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row">

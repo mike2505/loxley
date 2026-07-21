@@ -28,8 +28,8 @@ export default function GrantsPage() {
       }
       lead="The grants program funds work that makes robotics more open: reference hardware, foundational skills, public datasets and tooling. Funded by the treasury, decided by governance, paid in $LOX with milestone-based tranches."
       facts={[
-        ["1.8M", "$LOX granted to date"],
-        ["112", "projects funded"],
+        ["1.4M", "$LOX granted to date"],
+        ["38", "projects funded"],
         ["73%", "shipped to registry"],
         ["2 weeks", "median decision time"],
       ]}

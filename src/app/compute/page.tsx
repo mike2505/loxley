@@ -28,10 +28,10 @@ export default function ComputePage() {
       }
       lead="Simulation and skill training run on a distributed compute network. Anyone can contribute GPU capacity and earn $LOX per verified work unit; builders get sim runs at a fraction of hyperscaler prices."
       facts={[
-        ["8,400", "GPUs online"],
+        ["620", "GPUs online"],
         ["400×", "peak sim speed vs realtime"],
         ["-72%", "cost vs hyperscalers"],
-        ["37", "countries providing"],
+        ["19", "countries providing"],
       ]}
       features={[
         {
@@ -70,7 +70,7 @@ export default function ComputePage() {
         lines: [
           "$ lox compute status",
           "provider lox1aron…f2 · tier A · 4× H100",
-          "today: 41,300 work units · 99.98% verified",
+          "today: 3,940 work units · 99.98% verified",
           "epoch payout: +212.40 LOX ✓",
           "lifetime: 18,411 LOX · reputation 0.994",
         ],

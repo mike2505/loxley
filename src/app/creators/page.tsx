@@ -26,11 +26,11 @@ export default function CreatorsPage() {
           <span className="text-gradient">You keep the upside.</span>
         </>
       }
-      lead="The Creator Hub is home base for the 12,400 people publishing on Loxley: live royalty dashboards, split management, fork lineage maps and the tools that turn a good component into an income stream."
+      lead="The Creator Hub is home base for the 2,300 people publishing on Loxley: live royalty dashboards, split management, fork lineage maps and the tools that turn a good component into an income stream."
       facts={[
-        ["$24M", "paid to creators"],
-        ["12,400", "active creators"],
-        ["31.8k", "top model downloads"],
+        ["$530K", "paid to creators"],
+        ["2,300", "active creators"],
+        ["3.2k", "top model downloads"],
         ["0.25s", "royalty settlement"],
       ]}
       features={[

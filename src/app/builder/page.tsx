@@ -28,8 +28,8 @@ export default function BuilderPage() {
       }
       lead="The Builder is a visual canvas where a robot is a component graph: chassis, actuators, sensors, skills and datasets — each one a versioned, on-chain asset with its own authors. Drag, wire, compile."
       facts={[
-        ["3,180", "published models"],
-        ["11,900", "reusable components"],
+        ["480", "published models"],
+        ["1,900", "reusable components"],
         ["96%", "builds reuse ≥1 community part"],
         ["<10s", "graph compile time"],
       ]}

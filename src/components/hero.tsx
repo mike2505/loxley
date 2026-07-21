@@ -14,9 +14,9 @@ import { useRef, type MouseEvent } from "react";
 import { Counter, WordReveal } from "./primitives";
 
 const STATS = [
-  { value: 12400, suffix: "+", label: "builders on-chain" },
-  { value: 3180, suffix: "", label: "robot models published" },
-  { value: 24, prefix: "$", suffix: "M", label: "paid out to creators" },
+  { value: 2300, suffix: "+", label: "builders on-chain" },
+  { value: 480, suffix: "", label: "robot models published" },
+  { value: 530, prefix: "$", suffix: "K", label: "paid out to creators" },
   { value: 0.25, suffix: "s", decimals: 2, label: "block time" },
 ];
 

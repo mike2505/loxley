@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 const EVENTS = [
-  "ROBOT MINTED — WREN-2 #3181",
+  "ROBOT MINTED — WREN-2 #481",
   "SKILL TRAINED — grasp_v9",
   "4.2 LOX ROYALTY → @marian",
   "FLEET DEPLOY — 64 UNITS",

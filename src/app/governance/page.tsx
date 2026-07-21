@@ -28,7 +28,7 @@ export default function GovernancePage() {
       }
       lead="Interface standards, sim gate defaults, marketplace fees and treasury grants are governed by Loxley Improvement Proposals (LIPs). Voting power comes from staked $LOX plus creator reputation — builders steer, not just bagholders."
       facts={[
-        ["47", "LIPs passed"],
+        ["14", "LIPs passed"],
         ["31%", "avg turnout"],
         ["7 days", "voting window"],
         ["2.4M", "$LOX staked to vote"],
@@ -66,12 +66,12 @@ export default function GovernancePage() {
         },
       ]}
       terminal={{
-        title: "governance — LIP-48",
+        title: "governance — LIP-15",
         lines: [
-          "$ lox gov show LIP-48",
+          "$ lox gov show LIP-15",
           'title: "Adopt lox.pointcloud/3 as default LiDAR schema"',
           "status: voting · ends in 2d 14h",
-          "for 1,204,110 LOX (68%) · against 402,001 LOX (23%) · abstain 9%",
+          "for 1,102,884 LOX (68%) · against 371,020 LOX (23%) · abstain 9%",
           "quorum ✓ · executes at block #8,600,000 if passed",
         ],
       }}
