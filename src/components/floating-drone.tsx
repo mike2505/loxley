@@ -28,7 +28,7 @@ export function FloatingDrone({
           width={600}
           height={448}
           className={cn(
-            "h-full w-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] [filter:drop-shadow(0_0_24px_rgba(77,255,143,0.2))]",
+            "h-full w-full object-contain drop-shadow-[0_20px_40px_rgba(9,58,64,0.3)] [filter:drop-shadow(0_0_24px_rgba(10,162,178,0.25))]",
             flip && "-scale-x-100"
           )}
         />

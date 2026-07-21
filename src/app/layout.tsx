@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { SmoothScroll } from "@/components/smooth-scroll";
+import { WaitlistProvider } from "@/components/waitlist";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,7 +54,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-night text-snow">
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <WaitlistProvider>{children}</WaitlistProvider>
+        </SmoothScroll>
       </body>
     </html>
   );

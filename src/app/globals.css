@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --night: #060907;
-  --panel: #0b100d;
-  --panel-2: #0e1611;
-  --line: #1b2620;
-  --fog: #93a89b;
-  --snow: #e9f2ec;
-  --lox: #4dff8f;
-  --lox-dim: #23c563;
-  --lox-deep: #0c2d1a;
+  --night: #ddf4ef;
+  --panel: #f2fbf9;
+  --panel-2: #e7f6f2;
+  --line: #b4e0da;
+  --fog: #40757b;
+  --snow: #093a40;
+  --lox: #0aa2b2;
+  --lox-dim: #077f8d;
+  --lox-deep: #cdeef0;
 }
 
 @theme inline {
@@ -64,11 +64,11 @@
   0%,
   100% {
     opacity: 1;
-    box-shadow: 0 0 0 0 rgba(77, 255, 143, 0.5);
+    box-shadow: 0 0 0 0 rgba(10, 162, 178, 0.5);
   }
   50% {
     opacity: 0.6;
-    box-shadow: 0 0 0 6px rgba(77, 255, 143, 0);
+    box-shadow: 0 0 0 6px rgba(10, 162, 178, 0);
   }
 }
 
@@ -92,7 +92,13 @@ html.lenis {
 }
 
 body {
-  background: var(--night);
+  /* aqua-glass gradient: mint glow upper-left, saturated teal at the edges */
+  background-color: var(--night);
+  background-image:
+    radial-gradient(120% 90% at 28% 18%, rgba(224,246,228,0.9) 0%, transparent 55%),
+    radial-gradient(130% 110% at 88% 92%, rgba(43,190,203,0.5) 0%, transparent 60%),
+    linear-gradient(150deg, #64cdd4 0%, #aee7d9 42%, #cff1e3 58%, #58c9d1 100%);
+  background-attachment: fixed;
   color: var(--snow);
   font-family: var(--font-sans);
   overflow-x: clip;
@@ -124,7 +130,7 @@ body {
   transition: opacity 0.4s ease;
   background: radial-gradient(
     480px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(77, 255, 143, 0.08),
+    rgba(10, 162, 178, 0.12),
     transparent 55%
   );
 }
@@ -143,8 +149,8 @@ body {
 /* dotted terrain background for the hero */
 .hero-grid {
   background-image:
-    linear-gradient(rgba(77, 255, 143, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(77, 255, 143, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(7, 127, 141, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 127, 141, 0.1) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 30%, transparent 72%);
 }

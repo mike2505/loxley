@@ -108,8 +108,8 @@ export function Hero() {
             />
           </motion.div>
           {/* blend the plate into the page */}
-          <div className="absolute inset-0 bg-gradient-to-b from-night/60 via-transparent to-night" />
-          <div className="absolute inset-0 bg-gradient-to-r from-night/70 via-night/10 to-night/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-night/80 via-night/20 to-night" />
+          <div className="absolute inset-0 bg-gradient-to-r from-night/80 via-night/30 to-night/60" />
 
         </motion.div>
 
@@ -124,7 +124,7 @@ export function Hero() {
             animate={{ opacity: 1, letterSpacing: "-0.02em" }}
             transition={{ duration: 1.6, delay: 0.2, ease: [0.21, 0.65, 0.32, 0.99] }}
             className="font-display text-[clamp(110px,20vw,320px)] font-semibold leading-none text-transparent"
-            style={{ WebkitTextStroke: "1.5px rgba(233,242,236,0.08)" }}
+            style={{ WebkitTextStroke: "1.5px rgba(9,58,64,0.14)" }}
           >
             LOXLEY
           </motion.span>
@@ -136,7 +136,7 @@ export function Hero() {
           className="pointer-events-none absolute bottom-[8%] right-[2%] h-[60vh] w-[46vw] opacity-70 blur-3xl md:right-[4%]"
           style={{
             background:
-              "radial-gradient(ellipse 50% 60% at 60% 65%, rgba(77,255,143,0.12), transparent 70%)",
+              "radial-gradient(ellipse 50% 60% at 60% 65%, rgba(10,162,178,0.22), transparent 70%)",
           }}
         />
         <div
@@ -144,7 +144,7 @@ export function Hero() {
           className="pointer-events-none absolute bottom-[8%] left-[2%] hidden h-[56vh] w-[40vw] opacity-60 blur-3xl md:left-[4%] md:block"
           style={{
             background:
-              "radial-gradient(ellipse 50% 60% at 40% 65%, rgba(77,255,143,0.10), transparent 70%)",
+              "radial-gradient(ellipse 50% 60% at 40% 65%, rgba(10,162,178,0.18), transparent 70%)",
           }}
         />
 
@@ -196,9 +196,9 @@ export function Hero() {
               {/* contact glow at the feet */}
               <div
                 className="absolute -bottom-1 left-1/2 h-6 w-[85%] -translate-x-1/2 rounded-[100%] blur-lg"
-                style={{ background: "rgba(77,255,143,0.12)" }}
+                style={{ background: "rgba(10,162,178,0.25)" }}
               />
-              <div className="absolute -bottom-2 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-[100%] bg-black/70 blur-xl" />
+              <div className="absolute -bottom-2 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-[100%] bg-snow/30 blur-xl" />
             </motion.div>
           </motion.div>
         </motion.div>
@@ -253,9 +253,9 @@ export function Hero() {
               {/* contact glow at the feet */}
               <div
                 className="absolute -bottom-1 left-1/2 h-6 w-[85%] -translate-x-1/2 rounded-[100%] blur-lg"
-                style={{ background: "rgba(77,255,143,0.14)" }}
+                style={{ background: "rgba(10,162,178,0.28)" }}
               />
-              <div className="absolute -bottom-2 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-[100%] bg-black/70 blur-xl" />
+              <div className="absolute -bottom-2 left-1/2 h-8 w-[70%] -translate-x-1/2 rounded-[100%] bg-snow/30 blur-xl" />
             </motion.div>
           </motion.div>
         </motion.div>
@@ -285,8 +285,13 @@ export function Hero() {
         >
           <motion.div
             style={{ x: contentMX, y: contentMY }}
-            className="mx-auto flex max-w-2xl flex-col items-center text-center"
+            className="relative mx-auto flex max-w-2xl flex-col items-center text-center"
           >
+            {/* pale spotlight so the copy stays readable over the stage photo */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -inset-x-32 -inset-y-12 -z-10 rounded-[100%] bg-night/75 blur-3xl"
+            />
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -320,7 +325,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 1.0 }}
-              className="mt-7 max-w-xl text-base leading-relaxed text-fog sm:text-lg"
+              className="mt-7 max-w-xl text-base leading-relaxed text-snow/80 sm:text-lg"
             >
               Loxley is the open platform to build, simulate, deploy and
               monetize robots — with every model, skill and dataset owned
@@ -335,7 +340,7 @@ export function Hero() {
             >
               <Link
                 href="/#platform"
-                className="group flex items-center gap-2 rounded-xl bg-lox px-7 py-3.5 text-sm font-semibold text-night shadow-[0_0_40px_rgba(77,255,143,0.25)] transition-all hover:bg-snow hover:shadow-[0_0_60px_rgba(77,255,143,0.4)]"
+                className="group flex items-center gap-2 rounded-xl bg-lox px-7 py-3.5 text-sm font-semibold text-night shadow-[0_0_40px_rgba(10,162,178,0.35)] transition-all hover:bg-snow hover:shadow-[0_0_60px_rgba(10,162,178,0.5)]"
               >
                 Start building
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -359,7 +364,7 @@ export function Hero() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 120% 90% at 50% 45%, transparent 60%, rgba(6,9,7,0.55) 100%)",
+              "radial-gradient(ellipse 120% 90% at 50% 45%, transparent 60%, rgba(221,244,239,0.55) 100%)",
           }}
         />
 

@@ -6,9 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { Reveal } from "./primitives";
+import { useWaitlist } from "./waitlist";
 
 export function CTA() {
   const ref = useRef<HTMLElement>(null);
+  const waitlist = useWaitlist();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -44,13 +46,13 @@ export function CTA() {
               builders taking it back — one robot at a time.
             </p>
             <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row">
-              <Link
-                href="/#platform"
-                className="group flex items-center gap-2 rounded-xl bg-lox px-8 py-4 text-sm font-semibold text-night shadow-[0_0_50px_rgba(77,255,143,0.3)] transition-all hover:bg-snow"
+              <button
+                onClick={() => waitlist.open()}
+                className="group flex items-center gap-2 rounded-xl bg-lox px-8 py-4 text-sm font-semibold text-night shadow-[0_0_50px_rgba(10,162,178,0.4)] transition-all hover:bg-snow"
               >
                 Launch the app
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </button>
               <Link
                 href="https://github.com/LoxleyRobotics/loxley-sdk"
                 target="_blank"

@@ -96,7 +96,7 @@ function StepPanel({
       className="absolute inset-0 flex flex-col items-center justify-center text-center"
     >
       <span className="font-mono text-[12px] tracking-[0.4em] text-lox">{step.num}</span>
-      <div className="my-6 flex h-20 w-20 items-center justify-center rounded-3xl border border-line bg-panel text-lox shadow-[0_0_50px_rgba(77,255,143,0.15)]">
+      <div className="my-6 flex h-20 w-20 items-center justify-center rounded-3xl border border-line bg-panel text-lox shadow-[0_0_50px_rgba(10,162,178,0.25)]">
         <step.icon className="h-9 w-9" />
       </div>
       <h3 className="font-display text-5xl font-medium tracking-tight text-snow sm:text-7xl">
@@ -163,7 +163,7 @@ export function HowItWorks() {
           aria-hidden
           className="pointer-events-none absolute left-1/2 top-1/2 h-[60vh] w-[60vw] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
           style={{
-            background: "radial-gradient(circle, rgba(77,255,143,0.08), transparent 70%)",
+            background: "radial-gradient(circle, rgba(10,162,178,0.14), transparent 70%)",
           }}
         />
 

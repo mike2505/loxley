@@ -1,28 +1,17 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-/* Arrowhead "L" mark — a drawn bow / arrow tip */
+/* Glassy "L" mark cropped from public/logo.png (see public/logo-mark.png) */
 export function LogoMark({ className }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      className={cn("h-7 w-7", className)}
+    <Image
+      src="/logo-mark.png"
+      alt=""
+      width={28}
+      height={28}
+      className={cn("h-7 w-7 rounded-lg", className)}
       aria-hidden
-    >
-      <path
-        d="M4 4L20.5 11.5L13.5 13.5L11.5 20.5L4 4Z"
-        fill="currentColor"
-        className="text-lox"
-      />
-      <path
-        d="M14.5 17.5L28 28M28 28V19.5M28 28H19.5"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-snow"
-      />
-    </svg>
+    />
   );
 }
 

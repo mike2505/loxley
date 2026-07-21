@@ -17,20 +17,20 @@ import { cn } from "@/lib/utils";
 function NodeGraph() {
   return (
     <svg viewBox="0 0 320 120" fill="none" className="h-full w-full" aria-hidden>
-      <g stroke="#1b2620" strokeWidth="1.5">
+      <g stroke="#b4e0da" strokeWidth="1.5">
         <path d="M60 30 C110 30 110 60 160 60" />
         <path d="M60 90 C110 90 110 60 160 60" />
         <path d="M160 60 C210 60 210 40 260 40" />
         <path d="M160 60 C210 60 210 80 260 80" />
       </g>
       <g className="animate-pulse">
-        <circle cx="60" cy="30" r="4" fill="#4dff8f" />
-        <circle cx="60" cy="90" r="4" fill="#23c563" />
-        <circle cx="160" cy="60" r="5" fill="#4dff8f" />
-        <circle cx="260" cy="40" r="4" fill="#23c563" />
-        <circle cx="260" cy="80" r="4" fill="#4dff8f" />
+        <circle cx="60" cy="30" r="4" fill="#0aa2b2" />
+        <circle cx="60" cy="90" r="4" fill="#077f8d" />
+        <circle cx="160" cy="60" r="5" fill="#0aa2b2" />
+        <circle cx="260" cy="40" r="4" fill="#077f8d" />
+        <circle cx="260" cy="80" r="4" fill="#0aa2b2" />
       </g>
-      <g fill="#93a89b" fontFamily="monospace" fontSize="8">
+      <g fill="#40757b" fontFamily="monospace" fontSize="8">
         <text x="38" y="18">chassis</text>
         <text x="44" y="108">lidar_v3</text>
         <text x="142" y="46">controller</text>
@@ -93,7 +93,7 @@ function SimScan() {
         className="absolute inset-0 opacity-60"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(77,255,143,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(77,255,143,0.07) 1px, transparent 1px)",
+            "linear-gradient(rgba(7,127,141,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(7,127,141,0.12) 1px, transparent 1px)",
           backgroundSize: "20px 20px",
         }}
       />

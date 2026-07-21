@@ -71,7 +71,7 @@ export function Roadmap() {
                       ? "sm:left-auto sm:-right-[8px]"
                       : "sm:-left-[7px]",
                     m.status === "live"
-                      ? "border-lox bg-lox shadow-[0_0_16px_rgba(77,255,143,0.6)] animate-pulse-dot"
+                      ? "border-lox bg-lox shadow-[0_0_16px_rgba(10,162,178,0.6)] animate-pulse-dot"
                       : m.status === "next"
                         ? "border-lox bg-night"
                         : "border-line bg-panel"

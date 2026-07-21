@@ -5,6 +5,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "./logo";
+import { useWaitlist } from "./waitlist";
 import { cn } from "@/lib/utils";
 
 /* "/#x" instead of "#x" so links resolve from /docs too */
@@ -19,6 +20,7 @@ const LINKS = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const waitlist = useWaitlist();
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (y) => setScrolled(y > 24));
@@ -34,7 +36,7 @@ export function Navbar() {
         className={cn(
           "flex w-full max-w-6xl items-center justify-between rounded-2xl border px-5 py-3 transition-all duration-500",
           scrolled
-            ? "border-line bg-night/80 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.5)]"
+            ? "border-line bg-night/80 backdrop-blur-xl shadow-[0_8px_40px_rgba(9,58,64,0.15)]"
             : "border-transparent bg-transparent"
         )}
       >
@@ -55,13 +57,13 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/#cta"
+          <button
+            onClick={() => waitlist.open()}
             className="group hidden items-center gap-1.5 rounded-xl bg-lox px-4 py-2 text-sm font-semibold text-night transition-all hover:bg-snow sm:flex"
           >
             Launch App
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </Link>
+          </button>
           <button
             className="text-snow md:hidden"
             onClick={() => setOpen((v) => !v)}
@@ -91,6 +93,16 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={() => {
+                setOpen(false);
+                waitlist.open();
+              }}
+              className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-xl bg-lox px-4 py-3 text-sm font-semibold text-night"
+            >
+              Launch App
+              <ArrowUpRight className="h-4 w-4" />
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

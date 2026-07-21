@@ -248,7 +248,7 @@ export function ParallaxOrb({
         className="h-full w-full rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(77,255,143,0.14), transparent 70%)",
+            "radial-gradient(circle, rgba(10,162,178,0.2), transparent 70%)",
         }}
       />
     </Parallax>
